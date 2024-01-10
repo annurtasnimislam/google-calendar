@@ -1,7 +1,8 @@
 .leftSide {
   width: 18%;
   height: 100vh;
-  background-color: aquamarine;
   position: fixed;
   left: 0;
+  border-right: 1px solid var(--light-gray);
+  padding: 2em 1em 0 1.5em;
 }
