@@ -23,8 +23,8 @@ export default function Navbar() {
       </div>
       <div className={classes.navRight}>
         <img src={menu} alt="" />
-        <div>
-          <img src={user} alt="user" className={classes.profile} />
+        <div className={classes.profile}>
+          <img src={user} alt="user" />
         </div>
       </div>
     </div>
