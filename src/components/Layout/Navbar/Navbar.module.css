@@ -1,7 +1,69 @@
 .navbar {
-  background-color: aqua;
+  width: 100%;
+  height: 4em;
   position: fixed;
   top: 0;
-  width: 100%;
-  height: 3.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 1px solid var(--light-gray);
+}
+.navLeft {
+  display: flex;
+  align-items: center;
+  gap: 3.5em;
+  padding-left: 4px;
+}
+.hamburger {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 22px;
+}
+
+.hamburger > img:first-child {
+  height: 22px;
+  width: 22px;
+  margin-right: 10px;
+}
+.hamburger > img:nth-child(2) {
+  height: 32px;
+  width: 32px;
+}
+.center {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.center > p:first-child {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--dark);
+  border: 1px solid var(--light-gray);
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 8px 12px;
+  margin-right: 14px;
+}
+.center > p:first-child:hover {
+  background-color: whitesmoke;
+}
+.center > svg {
+  height: 18px;
+  width: 18px;
+}
+.center > p:last-child {
+  margin-left: 14px;
+  font-size: 22px;
+}
+.navLeft > div:nth-child(2) {
+  display: flex;
+}
+.navRight > img {
+  height: 32px;
+  width: 32px;
+  object-fit: cover;
+  object-position: 10% 20%;
+  border-radius: 50%;
 }
