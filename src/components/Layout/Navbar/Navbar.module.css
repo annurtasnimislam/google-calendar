@@ -60,7 +60,16 @@
 .navLeft > div:nth-child(2) {
   display: flex;
 }
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
 .navRight > img {
+  height: 16px;
+  width: 16px;
+}
+.profile {
   height: 32px;
   width: 32px;
   object-fit: cover;

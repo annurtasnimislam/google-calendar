@@ -2,14 +2,15 @@ import classes from "./Navbar.module.css";
 import icon from "../../../assets/Navbar/google-calendar.png";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import user from "../../../assets/Navbar/user.jpg";
-import menu from "../../../assets/Navbar/menu.png";
+import hamburger from "../../../assets/Navbar/hamburger.png";
+import menu from "../../../assets/Navbar/dots.png";
 
 export default function Navbar() {
   return (
     <div className={classes.navbar}>
       <div className={classes.navLeft}>
         <div className={classes.hamburger}>
-          <img src={menu} alt="hamburger" />
+          <img src={hamburger} alt="hamburger" />
           <img src={icon} alt="date" />
           <p>Calendar</p>
         </div>
@@ -21,7 +22,10 @@ export default function Navbar() {
         </div>
       </div>
       <div className={classes.navRight}>
-        <img src={user} alt="user" />
+        <img src={menu} alt="" />
+        <div>
+          <img src={user} alt="user" className={classes.profile} />
+        </div>
       </div>
     </div>
   );
