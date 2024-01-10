@@ -47,7 +47,7 @@
   margin-right: 14px;
 }
 .center > p:first-child:hover {
-  background-color: whitesmoke;
+  background-color: var(--smoke-white);
 }
 .center > svg {
   height: 18px;
