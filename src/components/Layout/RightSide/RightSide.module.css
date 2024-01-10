@@ -1,7 +1,32 @@
 .rightSide {
   width: 4%;
-  height: 100vh;
-  background-color: aquamarine;
+  height: 95vh;
   position: fixed;
   right: 0;
+  border-left: 1px solid var(--light-gray);
+  padding: 1.3em 0 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.rightSide > svg {
+  height: 14px;
+  width: 14px;
+  color: var(--dark);
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2em;
+  align-items: center;
+}
+.top > img {
+  height: 19px;
+  width: 19px;
+  border-radius: 2px;
+}
+.top > div {
+  padding: 0.5px 10px;
+  background-color: var(--light-gray);
 }
