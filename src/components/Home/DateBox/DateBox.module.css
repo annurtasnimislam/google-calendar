@@ -1,0 +1,10 @@
+.dateBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1em;
+  font-size: 12px;
+  border-bottom: 1px solid var(--light-gray);
+  border-left: 0.5px solid var(--light-gray);
+  border-right: 0.5px solid var(--light-gray);
+}
