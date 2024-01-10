@@ -1,5 +1,7 @@
-.home {
+.home > div {
   height: 95vh;
+  width: 78%;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
+  position: fixed;
 }
