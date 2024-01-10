@@ -1,0 +1,7 @@
+.leftSide {
+  width: 20%;
+  height: 100vh;
+  background-color: aquamarine;
+  position: fixed;
+  left: 0;
+}

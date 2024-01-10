@@ -1,8 +1,10 @@
+import { Home, Layout } from "./components";
+
 function App() {
   return (
-    <div>
-      <p>tuba</p>
-    </div>
+    <Layout>
+      <Home />
+    </Layout>
   );
 }
 

@@ -1,0 +1,7 @@
+.rightSide {
+  width: 5%;
+  height: 100vh;
+  background-color: aquamarine;
+  position: fixed;
+  right: 0;
+}
