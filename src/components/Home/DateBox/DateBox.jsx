@@ -1,10 +1,11 @@
 import classes from "./DateBox.module.css";
+import { getDate, format } from "date-fns";
 
-export default function DateBox() {
+export default function DateBox({ date, index }) {
   return (
     <div className={classes.dateBox}>
-      <p>sat</p>
-      <p>31</p>
+      {index < 7 && <p>{format(date, "EEE")}</p>}
+      <p>{getDate(date)}</p>
     </div>
   );
 }

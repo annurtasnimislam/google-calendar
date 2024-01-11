@@ -10,7 +10,9 @@
   border-right: 0.5px solid var(--light-gray);
 }
 
-.dateBox > p:first-child {
-  font-size: 14px;
+.dateBox > p {
+  font-size: 10px;
+  font-weight: 600;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }

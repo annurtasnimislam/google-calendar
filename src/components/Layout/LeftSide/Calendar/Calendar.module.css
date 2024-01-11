@@ -1,11 +1,10 @@
 .haeder {
-  width: 91%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 14px;
   font-size: 14px;
   font-weight: 500;
+  padding: 0 4% 20px;
 }
 .arrow {
   display: flex;
@@ -17,5 +16,5 @@
 .day {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  row-gap: 10px;
+  row-gap: 20px;
 }
