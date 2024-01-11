@@ -6,6 +6,11 @@ import hamburger from "../../../assets/Navbar/hamburger.png";
 import menu from "../../../assets/Navbar/dots.png";
 
 export default function Navbar() {
+  const currentDate = new Date();
+
+  const options = { month: "long", year: "numeric" };
+  const formattedDate = currentDate.toLocaleString("en-US", options);
+
   return (
     <div className={classes.navbar}>
       <div className={classes.navLeft}>
@@ -18,7 +23,7 @@ export default function Navbar() {
           <p>Today</p>
           <IoIosArrowBack />
           <IoIosArrowForward />
-          <p>January 2024</p>
+          <p>{formattedDate}</p>
         </div>
       </div>
       <div className={classes.navRight}>
