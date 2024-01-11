@@ -12,7 +12,7 @@ export default function Layout(props) {
       />
       <div className={classes.container}>
         <div>
-          <LeftSide />
+          <LeftSide currentMonth={props.currentMonth} />
         </div>
         <div>{props.children}</div>
         <div>
