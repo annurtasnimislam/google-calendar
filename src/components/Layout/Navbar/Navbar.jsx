@@ -4,12 +4,16 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import user from "../../../assets/Navbar/user.jpg";
 import hamburger from "../../../assets/Navbar/hamburger.png";
 import menu from "../../../assets/Navbar/dots.png";
+import { format, addMonths, subMonths } from "date-fns";
 
-export default function Navbar() {
-  const currentDate = new Date();
+export default function Navbar({ currentMonth, setCurrentMonth }) {
+  const prevMonth = () => {
+    setCurrentMonth(subMonths(currentMonth, 1));
+  };
 
-  const options = { month: "long", year: "numeric" };
-  const formattedDate = currentDate.toLocaleString("en-US", options);
+  const nextMonth = () => {
+    setCurrentMonth(addMonths(currentMonth, 1));
+  };
 
   return (
     <div className={classes.navbar}>
@@ -21,9 +25,9 @@ export default function Navbar() {
         </div>
         <div className={classes.center}>
           <p>Today</p>
-          <IoIosArrowBack />
-          <IoIosArrowForward />
-          <p>{formattedDate}</p>
+          <IoIosArrowBack onClick={prevMonth} />
+          <IoIosArrowForward onClick={nextMonth} />
+          <p>{format(currentMonth, "MMMM yyyy")}</p>
         </div>
       </div>
       <div className={classes.navRight}>

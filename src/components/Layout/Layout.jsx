@@ -6,7 +6,10 @@ import RightSide from "./RightSide/RightSide";
 export default function Layout(props) {
   return (
     <div className={classes.layout}>
-      <Navbar />
+      <Navbar
+        currentMonth={props.currentMonth}
+        setCurrentMonth={props.setCurrentMonth}
+      />
       <div className={classes.container}>
         <div>
           <LeftSide />
